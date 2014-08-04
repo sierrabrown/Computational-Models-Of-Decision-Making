@@ -1,6 +1,7 @@
 This folder contains a step-by-step analysis of three neural models implemented in matlab. Includes both an analysis of the scientific theory behind the model and of the code itself.
 
-1. AI Maze:
+1. AI Maze
+
 	The foundation of the maze solving process is the combination of the two processes studied by Tolman and Hull; respectively the deliberative and habit systems. In early learning, a rat in a maze solving trial engages in the deliberative process, trying out various paths and attempting to determine at each crossroads which path will lead to the higher reward. (Redish, 199) Later in learning, however, the rats switches to a habit based action strategy, in which it develops response-chain habits and stops relying on the more computationally expensive deliberative system. (Redish 199)
 
 	The transition between these two decision making systems is clearly illustrated by Packard and McGaugh. Rats were tested in a simple T-maze, where a right-turn was reinforced. When they were tested after 8 days of training with a reinforce on the left side instead, rats successfully switched their plan and took a left turn. This action-outcome decision is reliant on the hippocampus, and not on the dorsal striatum. Furthermore, when the rats were tested after 16 days of training, the opposite results were seen: rats continued to make the right-turn even when the reinforcer was on the left, relying on the S-R association in the dorsal-striatum system and not the hippocampal system.
@@ -8,7 +9,8 @@ This folder contains a step-by-step analysis of three neural models implemented 
 	These concepts are further supported by Yin and Knowlton (2006). They showed that while win-stay training supported by the dorsal striatum is not affected by devaluation, win-shift performance that relies on the hippocampus is affected by devaluation. Thus, we can conclude that rewards resulting in dopamine bursts and dips are crucial in the beginning stages of learning but not for experienced foragers.
 
 
-2. Feedback and Feedforward Control:
+2. Feedback and Feedforward Control
+
 	Feedback control is a method used to compare a performed action with the original action goal, and compute the difference between the two in order to achieve more optimal results with the next adjustment. The negative feedback controller (servo) performs this process with the goal of calculating the difference (comparator). However, negative feedback control on its own is unable to create a high performance system due to long lags.  Unlike in robotics, the nerves in our bodies transmit the signals relatively slowly, which would result in an excess of error signals reaching to movement point when the comparator is actually at zero. Since we do have nerves, not wires or optical cables, feedback control and feedforward control are used in conjunction.
 
 	Central pattern generators automate a large portion of repetitive movements. Though they do not require sensory information, they perform much better with sensory feedback. These CPGS therefore operate on a combination of feedback control and learned feedforward control. Skill learning continues to be necessary since feedback control has a low upper bound on performance and can only perform corrections after an error has already been made. The cerebellum will perform functions of learned feedforward control and compensate for this.
